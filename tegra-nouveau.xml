@@ -6,6 +6,7 @@
   <remote name="nvidia" fetch="https://github.com/NVIDIA/"/>
   <remote name="gnurou" fetch="https://github.com/Gnurou/"/>
   <remote name="denvit" fetch="https://github.com/denysvitali/"/>
+  <remote name="samt" fetch="https://github.com/Samt43/"/>
 
   <default revision="master"/>
 
@@ -25,7 +26,7 @@
   <project path="drm" name="drm" remote="gnurou" revision="fb_modifiers"/>
   <project path="wayland" name="wayland/wayland.git" remote="freedesktop" revision="refs/tags/1.11.0"/>
   -->
-  <project path="mesa" name="mesa.git" remote="gnurou" revision="renderonly"/>
+  <project path="mesa" name="mesa.git" remote="samt" revision="renderonly"/>
   <project path="kmscube" name="kmscube.git" remote="gnurou" revision="master"/>
   <!--
   <project path="weston" name="weston.git" remote="gnurou" revision="fb_modifiers"/>
