@@ -12,7 +12,7 @@
   <default revision="master"/>
 
   <!-- Build scripts -->
-  <project path="scripts" name="tegra-rootfs-scripts.git" remote="denvit"/>
+  <project path="scripts" name="tegra-rootfs-scripts.git" remote="denvit" revision="tegra-mesa"/>
 
   <!-- Boot, Kernel and Nouveau modules -->
   <project path="linux" name="linux-smaug.git" remote="denvit" revision="4.15"/>
