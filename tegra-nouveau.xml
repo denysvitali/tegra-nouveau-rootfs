@@ -7,6 +7,7 @@
   <remote name="gnurou" fetch="https://github.com/Gnurou/"/>
   <remote name="denvit" fetch="https://github.com/denysvitali/"/>
   <remote name="samt" fetch="https://github.com/Samt43/"/>
+  <remote name="pixelc" fetch="https://github.com/pixelc-linux/"/>
   <remote name="tagr" fetch="git://people.freedesktop.org/~tagr/"/>
 
   <default revision="master"/>
@@ -25,9 +26,9 @@
   <project path="libinput" name="wayland/libinput.git" remote="freedesktop" revision="refs/tags/0.10.0"/>
   <project path="pthread-stubs" name="xcb/pthread-stubs.git" remote="freedesktop" revision="refs/tags/0.3"/>
   -->
-  <project path="drm" name="drm" remote="tagr" revision="master"/>
-  <project path="wayland" name="wayland/wayland.git" remote="freedesktop" revision="refs/tags/1.11.0"/>
-  <project path="mesa" name="mesa.git" remote="tagr" revision="master"/>
+  <project path="drm" name="drm" remote="pixelc" revision="master"/>
+  <project path="wayland" name="wayland.git" remote="pixelc" revision="refs/tags/1.14.0"/>
+  <project path="mesa" name="mesa.git" remote="pixelc" revision="master"/>
   <project path="kmscube" name="kmscube.git" remote="gnurou" revision="master"/>
   <project path="weston" name="weston.git" remote="gnurou" revision="fb_modifiers"/>
   <!--
