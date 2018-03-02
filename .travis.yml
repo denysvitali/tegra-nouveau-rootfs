@@ -7,12 +7,14 @@ before_install:
 - git config --global color.ui true
 - "repo init -u https://github.com/pixelc-linux/rootfs-generator -b tegra-mesa -m tegra-nouveau.xml > /dev/null"
 - "repo sync -j4 -c > /dev/null"
+- git clone -b "for-4.17/work" https://github.com/denysvitali/linux-smaug linux
 - export TOP=$PWD
 - export ARCH=aarch64
 - "sudo apt install -y proot git build-essential wget phablet-tools autoconf automake libtool libc6-i386 lib32stdc++6 lib32z1 pkg-config libwayland-dev bison flex bc u-boot-tools glib-2.0 libffi-dev xutils-dev python-mako intltool libxml2-dev > /dev/null"
 script:
 - "./scripts/download-gcc > /dev/null"
 - "./scripts/download-rootfs > /dev/null"
+- "./scripts/build-linux > /dev/null"
 - "./scripts/prepare-rootfs > /dev/null"
 - "./scripts/build-drm > /dev/null"
 - "./scripts/build-mesa > /dev/null"
