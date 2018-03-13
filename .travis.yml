@@ -4,7 +4,7 @@ before_install:
 - export TOP=$PWD
 - export ARCH=aarch64
 - "sudo apt install -y proot python python-pip xutils-dev > /dev/null"
-- pip install mako
+- sudo pip install mako
 script:
 - "./scripts/download-gcc > /dev/null"
 - "./scripts/download-rootfs > /dev/null"
