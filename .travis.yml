@@ -3,7 +3,7 @@ before_install:
 - git config --global color.ui true
 - export TOP=$PWD
 - export ARCH=aarch64
-- "sudo apt install -y proot python python-pip xutils-dev > /dev/null"
+- "sudo apt install -y proot python python-pip xutils-dev libwayland-dev > /dev/null"
 - sudo pip install mako
 script:
 - "./scripts/download-gcc > /dev/null"
