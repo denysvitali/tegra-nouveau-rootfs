@@ -10,7 +10,7 @@ script:
 - "./scripts/download-rootfs > /dev/null"
 - "./scripts/prepare-rootfs > /dev/null"
 - "./scripts/build-drm > /dev/null"
-- "./scripts/build-mesa"
+- "./scripts/build-mesa > /dev/null"
 - "./scripts/generate-rootfs > /dev/null"
 deploy:
   provider: releases
