@@ -14,3 +14,6 @@
 [submodule "wayland"]
 	path = wayland
 	url = https://github.com/wayland-project/wayland
+[submodule "drm"]
+	path = drm
+	url = git://anongit.freedesktop.org/mesa/drm
