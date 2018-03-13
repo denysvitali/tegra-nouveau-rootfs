@@ -17,3 +17,6 @@
 [submodule "drm"]
 	path = drm
 	url = git://anongit.freedesktop.org/mesa/drm
+[submodule "linux-firmware"]
+	path = linux-firmware
+	url = git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
