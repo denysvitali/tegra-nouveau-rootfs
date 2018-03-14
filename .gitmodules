@@ -20,3 +20,6 @@
 [submodule "linux-firmware"]
 	path = linux-firmware
 	url = git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+[submodule "weston"]
+	path = weston
+	url = https://github.com/wayland-project/weston

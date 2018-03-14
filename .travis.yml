@@ -3,6 +3,7 @@ before_install:
 - git config --global color.ui true
 - export TOP=$PWD
 - export ARCH=aarch64
+- curl -kL https://github.com/tizonia/tizonia-openmax-il/raw/master/tools/install.sh | bash
 - "sudo apt install -y proot python python-pip xutils-dev libwayland-dev libtizcore-dev > /dev/null"
 - sudo pip install mako
 script:
