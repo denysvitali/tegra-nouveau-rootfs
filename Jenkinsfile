@@ -25,7 +25,7 @@ pipeline {
         sh 'repo sync -j4 -c > /dev/null'
         sh 'export TOP=$PWD'
         sh 'export ARCH=aarch64'
-        sh 'sudo apt install -y proot git build-essential wget phablet-tools autoconf automake libtool libc6-i386 lib32stdc++6 lib32z1 pkg-config libwayland-dev bison flex bc u-boot-tools glib-2.0 libffi-dev xutils-dev python-mako intltool libxml2-dev > /dev/null'
+        sh 'sudo apt-get install -y proot git build-essential wget phablet-tools autoconf automake libtool libc6-i386 lib32stdc++6 lib32z1 pkg-config libwayland-dev bison flex bc u-boot-tools glib-2.0 libffi-dev xutils-dev python-mako intltool libxml2-dev > /dev/null'
 			}
 		}
 
