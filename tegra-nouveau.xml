@@ -28,7 +28,7 @@
   -->
   <project path="drm" name="drm" remote="pixelc" revision="master"/>
   <project path="wayland" name="wayland.git" remote="pixelc" revision="refs/tags/1.14.0"/>
-  <project path="mesa" name="mesa.git" remote="pixelc" revision="master"/>
+  <project path="mesa" name="mesa.git" remote="pixelc" revision="18.1"/>
   <project path="kmscube" name="kmscube.git" remote="gnurou" revision="master"/>
   <project path="weston" name="weston.git" remote="gnurou" revision="fb_modifiers"/>
   <!--
