@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'ubuntu:latest'
+			image 'dvitali/build-container:latest'
 			args '-v $HOME/build:/kernel --privileged'
 		}
 	}
@@ -16,8 +16,6 @@ pipeline {
 		}
 		stage('Prepare'){
 			steps {
-        sh 'apt-get update'
-        sh 'apt-get install -y sudo wget curl git python'
 				sh 'sh -c "curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo"'
         sh 'chmod a+x /usr/bin/repo'
         sh 'git config --global color.ui true'
@@ -25,7 +23,6 @@ pipeline {
         sh 'repo sync -j4 -c'
         sh 'export TOP=$PWD'
         sh 'export ARCH=aarch64'
-        sh 'apt-get install -y proot git build-essential wget phablet-tools autoconf automake libtool libc6-i386 lib32stdc++6 lib32z1 pkg-config libwayland-dev bison flex bc u-boot-tools glib-2.0 libffi-dev xutils-dev python-mako intltool libxml2-dev'
 			}
 		}
 
