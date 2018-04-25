@@ -6,6 +6,11 @@ pipeline {
 		}
 	}
 	stages {
+    stage('Pull Submodules'){
+      steps {
+        sh 'git submodule update --init --recursive'
+      }
+    }
 		stage('Prepare'){
 			steps {
         sh 'export TOP=$PWD'
