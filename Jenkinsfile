@@ -17,7 +17,7 @@ pipeline {
 		stage('Prepare'){
 			steps {
         sh 'apt-get update'
-        sh 'apt-get install -y sudo wget curl git'
+        sh 'apt-get install -y sudo wget curl git python'
 				sh 'sudo sh -c "curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo"'
         sh 'sudo chmod a+x /usr/bin/repo'
         sh 'git config --global color.ui true'
