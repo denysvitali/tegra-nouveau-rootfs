@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'dvitali/android-build:feb-20'
+			image 'ubuntu:latest'
 			args '-v $HOME/build:/kernel --privileged'
 		}
 	}
@@ -11,7 +11,6 @@ pipeline {
 	stages {
 		stage('Pull') {
 			steps {
-				sh 'mkdir -p /kernel/linux-smaug && mkdir -p /kernel/kitchen/ && cd /kernel/linux-smaug'
 				checkout scm
 			}
 		}
