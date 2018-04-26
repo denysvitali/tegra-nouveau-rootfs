@@ -4,6 +4,9 @@ pipeline {
 			image 'dvitali/build-container:latest'
 		}
 	}
+  options {
+    timeout(time: 1, unit: 'HOURS')
+  }
 	stages {
     stage('Pull Submodules'){
       steps {
