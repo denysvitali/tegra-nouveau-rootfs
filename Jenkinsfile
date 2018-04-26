@@ -7,6 +7,7 @@ pipeline {
   options {
     timeout(time: 1, unit: 'HOURS')
   }
+  Dorg.jenkinsci.plugins.durabletask.BourneShellScript.HEARTBEAT_CHECK_INTERVAL=3600
 	stages {
     stage('Pull Submodules'){
       steps {
