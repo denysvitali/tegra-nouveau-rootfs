@@ -2,7 +2,6 @@ pipeline {
 	agent {
 		docker {
 			image 'dvitali/build-container:latest'
-			args '-v $HOME/build:/kernel -v /var/jenkins_home/workspace/:/var/jenkins_home/workspace/ --privileged'
 		}
 	}
 	stages {
