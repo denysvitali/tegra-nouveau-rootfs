@@ -28,7 +28,7 @@ node {
         archiveArtifacts 'out/rootfs.tar.gz'
       }
 	  } finally {
-      cleanWS()
+      cleanWs()
     }
   }
 }
