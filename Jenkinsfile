@@ -24,6 +24,9 @@ pipeline {
 
     stage('Generate RootFS'){
       steps {
+        sh 'ls -la $HOME'
+        sh 'echo PWD: $PWD"
+        sh 'ls -la /app"
         sh './scripts/build-linux'
         sh './scripts/prepare-rootfs'
         sh './scripts/build-drm'
